@@ -1,32 +1,62 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="zh-CN">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" /><!--指定网页所用字符集，一般指定utf-8为Unicode 字符编码-->
+    <meta name="viewport" content="width=device-width" /><!--响应式网站指定以自适应手机端和电脑端显示-->
+    <meta name="description" content=""><!--为网页定义描述内容-->
+    <meta name="robots" content="all,follow">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JS"><!--为搜索引擎定义关键词（keywords）-->
+    <meta name="author" content="pcgzdw"><!--定义网页作者（author）-->
+    <!-- http-equiv属性为 content 属性的信息/值提供HTTP标头，http-equiv属性可用于模拟HTTP响应标头。-->
+    <!-- <meta http-equiv="content-type" content="text/html; charset=UTF-8">-->
+    <!-- 定义浏览器的渲染方式; 如果浏览器优先按content值的最右边如下面的edge来渲染，在IE9与edge间的浏览器会按IE9来渲染，IE9以下的则不支持 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=edge">
+    <!-- 下面content 属性的值必须匹配同一文档中的一个link元素上的 title 属性的值，或者必须匹配同一文档中的一个 style 元素上的 title 属性的值-->
+    <!--<meta http-equiv="default-style" content="the document's preferred stylesheet"> -->
+    <!-- 定义文档自动刷新的时间间隔,单位为秒,值 "refresh" 应该慎重使用，因为它会使得页面不受用户控制。 -->
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <meta name="robots" content="all,follow">
     <script src="scripts/main.js" type="module"></script>
+    <link href="styles/bootstrap.min.css" rel="stylesheet"/>
     <link href="styles/my.css" rel="stylesheet"/>
     <title>My test page</title>
   </head>
   <body>    
-    <h1>主标题</h1>   
-    <img src="images/firefox-icon.png" alt="My test image" />
-    <p>At Mozilla, we're a <strong>global</strong> community of</p>
-    <h3>无序列表</h3>
-    <ul>
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
-    <h2>有序列表</h2>
-    <ol>
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ol>
-    <p>working together…</p>
-    <a href="https://www.mozilla.org/zh-CN/about/manifesto/">
-      Mozilla Manifesto
-    </a>
-    
+    <h1 class="display-1">主标题</h1>   
+    <div class="container-fluid p-5 my-5 bg-primary text-white">
+      <div class="row">
+        <div class="col-2" style="background-color: #92cfbd;
+            box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">.col-6</div>
+        <div class="col-10" style="background-color: #dedef8;box-shadow: 
+        inset 1px -1px 1px #444, inset -1px 1px 1px #444;">.col-6</div>
+      </div>
+    </div>
+    <p>使用 mark 元素来 <mark>高亮</mark> 文本。</p>
+    <p class="bg-info text-white">Bootstrap 5 定义abbr元素的样式为显示在文本底部的一条虚线边框: The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <h1>Blockquotes</h1>
+    <p>The <code>blockquote</code> element is used to present content from another source:</p>
+    <blockquote class="blockquote">
+      <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+      <footer class="blockquote-footer">From WWF's website</footer>
+    </blockquote>    
+    <h1>Keyboard Inputs</h1>
+    <p class="text-capitalize">To indicate input that is typically entered via the keyboard, use the <code>kbd</code> element:</p>
+    <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+    <h1>Multiple Code Lines</h1>
+<p class="text-white-50 bg-dark">For multiple lines of code, use the <Code>pre</Code> element:</p>
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+</pre>
+<div class="mt-4 p-5 bg-primary text-white rounded">
+  <h1>菜鸟教程</h1> 
+  <p>学的不仅是技术，更是梦想！！！</p>
+  <p>学的不仅是技术，更是梦想！！！</p> 
+	<p>学的不仅是技术，更是梦想！！！</p>
+</div>
+ <script src="scripts/bootstrap.min.js" type="module"></script>
   </body>
 </html>
