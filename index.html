@@ -21,9 +21,25 @@
     <link href="styles/my.css" rel="stylesheet"/>
     <title>My test page</title>
   </head>
-  <body>    
-    <h1 class="display-1">主标题</h1>   
-    <div class="container-fluid p-5 my-5 bg-primary text-white">
+  <body>   
+    <h1 >导航栏</h1> 
+    <nav class="nav">
+      <li class="nav-item dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">css</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">链接 1</a>
+          <a class="dropdown-item" href="#">链接 2</a>
+          <a class="dropdown-item" href="#">链接 3</a>
+        </div>
+      </li>
+     <li class="nav-item">
+      <button type="button" class="btn btn-warning">html</button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-warning">javascript</button>
+      </li>
+    </nav>  
+    <div class="container-fluid p-5 my-5 bg-primary text-white">  
       <div class="row">
         <div class="col-2" style="background-color: #92cfbd;
             box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">.col-6</div>
@@ -31,8 +47,10 @@
         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">.col-6</div>
       </div>
     </div>
-    <p>使用 mark 元素来 <mark>高亮</mark> 文本。</p>
-    <p class="bg-info text-white">Bootstrap 5 定义abbr元素的样式为显示在文本底部的一条虚线边框: The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <article>
+      <header>使用 mark 元素来 <mark>高亮</mark> 文本。</header>
+      <p class="bg-info text-white">Bootstrap 5 定义abbr元素的样式为显示在文本底部的一条虚线边框: The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    </article>
     <h1>Blockquotes</h1>
     <p>The <code>blockquote</code> element is used to present content from another source:</p>
     <blockquote class="blockquote">
@@ -57,6 +75,7 @@ line breaks.
   <p>学的不仅是技术，更是梦想！！！</p> 
 	<p>学的不仅是技术，更是梦想！！！</p>
 </div>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
  <script src="scripts/bootstrap.min.js" type="module"></script>
   </body>
 </html>
